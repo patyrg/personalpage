@@ -1,12 +1,50 @@
+/* reset do css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    background-image: url("https://cdn.pixabay.com/photo/2020/03/14/17/19/flower-4931280_960_720.jpg"); 
+    background-image: url("../img/background.jpg");
     background-size: auto 100vh;
     font-family: garamound;
     height: 100vh;
+    font-size: 12px;
   }
-  
+
+/* breakpoint */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  };
+}
+
+/* breakpoint */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  };
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 22px;
+  };
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
   .menu {
-    background-color: white; 
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
   }
   
   a {
@@ -27,8 +65,17 @@ body {
     list-style-type: square;
   }
   
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+  }
   .site-title,
   .site-subtitle {
     color:  black;
     text-align: center;
+  }
+
+  .img-portfolio {
+      height: 180px;
+      width: 180px;
   }
